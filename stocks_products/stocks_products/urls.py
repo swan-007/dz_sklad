@@ -23,6 +23,7 @@ r = routers.DefaultRouter()
 r.register(r'product', ProductViewSet)
 r.register(r'stock', StockViewSet)
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include(r.urls)),
